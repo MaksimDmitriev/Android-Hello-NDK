@@ -12,14 +12,14 @@ There are a header file and a *c file in the project, and all you need is to run
 ⋅⋅⋅Create a *.c file and implement `messageFromNativeCode()` there.⋅⋅
 
 ⋅⋅⋅For example.⋅⋅
-```
+<code>
 #include "com_md_hellondk_MainActivity.h"
 
 JNIEXPORT jstring JNICALL Java_com_md_hellondk_MainActivity_messageFromNativeCode(
 		JNIEnv *env, jobject thisObj) {
 	return (*env)->NewStringUTF(env, "Hello from native code!");
 }
-```
+</code>
 
 3. Compile the native part. Run `ndk-build` from the project directory.
 4. Run the application on your device or emulator.

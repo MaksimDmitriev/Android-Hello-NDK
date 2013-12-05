@@ -5,13 +5,13 @@ There are a header file and a *c file in the project, and all you need is to run
 
 1. How to generate a new header file?
 
-⋅⋅⋅Run `javah -jni -o jni/com_md_hellondk_MainActivity.h -classpath bin/classes/ com.md.hellondk.MainActivity` from your project directory
+⋅⋅⋅Run `javah -jni -o jni/com_md_hellondk_MainActivity.h -classpath bin/classes/ com.md.hellondk.MainActivity` from your project directory⋅⋅
 
 2. How to implement a native method?
 
-⋅⋅⋅Create a *.c file and implement `messageFromNativeCode()` there.
+⋅⋅⋅Create a *.c file and implement `messageFromNativeCode()` there.⋅⋅
 
-⋅⋅⋅For example.
+⋅⋅⋅For example.⋅⋅
 ```
 #include "com_md_hellondk_MainActivity.h"
 

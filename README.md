@@ -6,6 +6,7 @@ There are a header file and a *c file in the project, and all you need is to run
 1. How to generate a new header file?
 
    Run `javah -jni -o jni/com_md_hellondk_MainActivity.h -classpath bin/classes/ com.md.hellondk.MainActivity` from your project directory
+   When developing in Android Studio, the command might look like `javah -jni -o app/src/main/jni/com_md_nir_two.h -classpath app/build/intermediates/classes/debug/ com.md.nir.two.MainActivity`
 
 2. How to implement a native method?
 
